@@ -1,6 +1,8 @@
 package com.mycustomspinnerdemo
 
+import android.content.ContentValues.TAG
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,7 +31,6 @@ class CustomAdapter(context: Context,val countryList : ArrayList<Country>) : Arr
 
         countryName.text = country?.name
         countryImage.setImageResource(country!!.image)
-
         return view
     }
 }
