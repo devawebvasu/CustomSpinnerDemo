@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
                 var selectedItem = p0?.getItemAtPosition(p2)
 
-                Toast.makeText(this@MainActivity,"Selected Country is  $selectedItem",Toast.LENGTH_LONG).show()
+                Toast.makeText(this@MainActivity,"Selected Country is : $selectedItem",Toast.LENGTH_LONG).show()
             }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {
